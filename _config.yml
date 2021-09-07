@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 不想讲什么逻辑
+subtitle: '莫名喜欢风铃'
+description: '不知道想说点什么的'
 keywords:
-author: John Doe
-language: en
+author: pg633
+language: zh-Hans
 timezone: ''
 
 # URL
@@ -32,7 +32,7 @@ skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
-default_layout: post
+default_layout: page
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
@@ -97,12 +97,20 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:pg633/pg633.github.io.git
+  repo: https://github.com/pg633/pg633.github.io.git
   branch: master
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+
+  # avatar: "source/upload/avatar.jpg"
